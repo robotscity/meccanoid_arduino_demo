@@ -15,4 +15,4 @@ To try it you'll need the following:
 You can also check out the [reference material](http://cdn.meccano.com/open-source/Meccano_SmartModuleProtocols_2015.pdf), to understand, how do the Smart Modules work
 
 
-The result of this demo code: see video
+The result of this demo code: see [video] (https://youtu.be/HYVo0rqz0PA)
