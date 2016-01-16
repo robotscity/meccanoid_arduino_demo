@@ -2,7 +2,9 @@
 This is an example for Meccanoid Arduino library.
 
 To try this example you'll need the following:
+
 1. Meccanoid G15 in its human form
+
 2. Any Arduino
 3. Motor shield or motor driver, to drive robot's wheels. I tried the one based on L293D and it was quite decent
 4. Tamiya Mini male connector with wires - to connect to the robots' battery
