@@ -9,7 +9,10 @@ To try it you'll need the following:
 4. Tamiya Mini male connector with wires - to connect to the robots' battery
 5. Male connectors: CWF-2 to connect one motor and PLS-2 (it fits but not ideally, if you know the exact name of the connectors - please write me) to connect another
 6. 3 resistors of 22 kOhm and 3 resistors of 1 kOhm - to make pullup resistors (according to the manual)
-7. Download the [library](http://cdn.meccano.com/open-source/meccanoid-library.zip)
-8. You can also check out the [reference material](http://cdn.meccano.com/open-source/Meccano_SmartModuleProtocols_2015.pdf), to understand, how do the Smart Modules work
+7. Download the [library](http://cdn.meccano.com/open-source/meccanoid-library.zip) and add it to Arduino environment using Sketch -> Add library -> Add ZIP library
+8. Try this example: open demo_meccanoids.ino, change pin numbers accourding to your board, and upload it to your Arduino board
+
+You can also check out the [reference material](http://cdn.meccano.com/open-source/Meccano_SmartModuleProtocols_2015.pdf), to understand, how do the Smart Modules work
+
 
 The result of this demo code: see video
