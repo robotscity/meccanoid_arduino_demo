@@ -16,3 +16,5 @@ You can also check out the [reference material](http://cdn.meccano.com/open-sour
 
 
 The result of this demo code: see [video] (https://youtu.be/HYVo0rqz0PA)
+
+![alt text](https://cloud.githubusercontent.com/assets/7447910/12682678/c18a852e-c6c5-11e5-8186-a6897cf008fb.jpg "Meccanoid DOFs")
