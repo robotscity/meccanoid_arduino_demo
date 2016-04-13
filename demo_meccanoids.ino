@@ -85,17 +85,17 @@ void stay()
 }
 
 //Joints mapping:
-//Chain 1 - Left Arm. 1.0 is Arm Roll, 1.1 is Arm Pitch, 1.2 is Elbow
+//Chain 1 - Left Arm. 1.0 is Arm Pitch, 1.1 is Arm Roll, 1.2 is Elbow
 //Chain 2 - Head. 2.0 is Head Yaw, 2.1 is Head Roll, 2.2 is LEDs
-//Chain 3 - Right Arm. 3.0 is Arm Roll, 3.1 is Arm Pitch, 3.2 is Elbow
+//Chain 3 - Right Arm. 3.0 is Arm Pitch, 3.1 is Arm Roll 3.2 is Elbow
 
-const byte LEFT_ARM_ROLL=0; 
-const byte LEFT_ARM_PITCH=1; 
+const byte LEFT_ARM_PITCH=0; 
+const byte LEFT_ARM_ROLL=1; 
 const byte LEFT_ARM_ELBOW=2;
 const byte HEAD_YAW=3; 
 const byte HEAD_ROLL=4;
-const byte RIGHT_ARM_ROLL=5; 
-const byte RIGHT_ARM_PITCH=6; 
+const byte RIGHT_ARM_PITCH=5; 
+const byte RIGHT_ARM_ROLL=6; 
 const byte RIGHT_ARM_ELBOW=7;
 
 //jointName is LEFT_ARM_ROLL etc
@@ -103,11 +103,11 @@ const byte RIGHT_ARM_ELBOW=7;
 void setJoint(byte jointName, byte pos)
 {
   switch(jointName){
-    case LEFT_ARM_ROLL:
+    case LEFT_ARM_PITCH:
       chain1.setServoPosition(0, pos);
       chain1.communicate();
       break;
-    case LEFT_ARM_PITCH:
+    case LEFT_ARM_ROLL:
       chain1.setServoPosition(1, pos);
       chain1.communicate();
       break;
@@ -123,11 +123,11 @@ void setJoint(byte jointName, byte pos)
       chain2.setServoPosition(1, pos);
       chain2.communicate();
       break;      
-    case RIGHT_ARM_ROLL:
+    case RIGHT_ARM_PITCH:
       chain3.setServoPosition(0, pos);
       chain3.communicate();
       break;
-    case RIGHT_ARM_PITCH:
+    case RIGHT_ARM_ROLL:
       chain3.setServoPosition(1, pos);
       chain3.communicate();
       break;
@@ -162,11 +162,11 @@ const byte JOINT_WHITE=0xF7;
 void setJointColor(byte jointName, byte color)
 {
   switch(jointName){
-    case LEFT_ARM_ROLL:
+    case LEFT_ARM_PITCH:
       chain1.setServoColor(0, color);
       chain1.communicate();
       break;
-    case LEFT_ARM_PITCH:
+    case LEFT_ARM_ROLL:
       chain1.setServoColor(1, color);
       chain1.communicate();
       break;
@@ -182,11 +182,11 @@ void setJointColor(byte jointName, byte color)
       chain2.setServoColor(1, color);
       chain2.communicate();
       break;      
-    case RIGHT_ARM_ROLL:
+    case RIGHT_ARM_PITCH:
       chain3.setServoColor(0, color);
       chain3.communicate();
       break;
-    case RIGHT_ARM_PITCH:
+    case RIGHT_ARM_ROLL:
       chain3.setServoColor(1, color);
       chain3.communicate();
       break;
